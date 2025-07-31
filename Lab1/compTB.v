@@ -1,12 +1,12 @@
 `timescale 1ns/1ns
-`include "comparator.v"
+`include "mycomparator.v"
 
 module tb();
 
   reg a,b; //inputs are a and b
   wire gt, eq, lt; //outputs are gt, eq and lt
 
-  comparator dut(
+  mycomparator dut(
     .A(a),
     .B(b),
     .o1(gt)

@@ -1,8 +1,9 @@
-module 4biteqcomp(
-  input [3:0] A;
-  input [3:0] B;
-  output C;
+module eqcomparator4bit(
+  input [3:0] A,
+  input [3:0] B,
+  output C,
 ); //module instantiation
+
   wire [3:0] w1; //internal wire
 
   w1 = A ~^ B; //XNOR will give all bits of C 1 if the bits of A and B are same
