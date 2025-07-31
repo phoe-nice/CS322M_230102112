@@ -1,21 +1,21 @@
 `timescale 1ns/1ns
-`include "mycomparator.v"
+`include "comparator.v"
 
 module tb();
 
   reg a,b; //inputs are a and b
   wire gt, eq, lt; //outputs are gt, eq and lt
 
-  mycomparator dut(
+  comparator dut(
     .A(a),
     .B(b),
-    .o1(gt)
+    .o1(gt),
     .o2(eq),
     .o3(lt)
   );
 
   initial begin
-    $dumpfile("tb.vcd");
+    $dumpfile("comptb.vcd");
     $dumpvars(0, tb);
 
     a = 1'b0; b = 1'b0; //A = 0, B = 0
