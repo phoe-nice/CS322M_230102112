@@ -18,7 +18,7 @@ module tb_vending_mealy;
   always #5 clk = ~clk;
 
   initial begin
-    $dumpfile("dump.vcd");
+    $dumpfile("vending_mealy_wave.vcd");
     $dumpvars(0, tb_vending_mealy);
 
     // Initialize signals
