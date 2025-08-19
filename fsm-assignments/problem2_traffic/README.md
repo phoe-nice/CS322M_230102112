@@ -71,6 +71,8 @@ All outputs are mutually exclusive and follow correct traffic light rules.
 
 ---
 
+![State Diagram](/waves/additional_images/state_diagram_png)
+
 ## Testbench: `tb_traffic_light`
 
 ### Features
