@@ -1,6 +1,6 @@
 ## State Diagram
 
-![State Diagram](waves/additional_images/state_diagram.png)
+![State Diagram](waves/additional_images/state_diagram.jpg)
 
 ---
 
