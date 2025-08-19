@@ -7,6 +7,6 @@
 ## How to Simulate(Using Iverilog)
 
    ```bash
-   iverilog -o traffic_light.vvp traffic_light.v tb_traffic_light.v
-   vvp traffic_light.vvp
-   gtkwave traffic_light.vcd
+   iverilog -o link.vvp tb_link_top.v link_top.v master_fsm.v slave_fsm.v
+   vvp link.vvp
+   gtkwave link.vcd
