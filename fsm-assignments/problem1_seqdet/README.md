@@ -43,6 +43,8 @@ The FSM transitions based on current state and input bit. When in **S3** and `di
 
 ![State Diagram](waves/additional_images/state_diagram.jpg)
 
+---
+
 ## Testbench: `tb_seq_detect_mealy`
 
 - Simulates the FSM by providing a **20-bit input sequence**: `00110011011010011010`
