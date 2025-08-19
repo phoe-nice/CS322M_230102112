@@ -71,7 +71,7 @@ All outputs are mutually exclusive and follow correct traffic light rules.
 
 ---
 
-![State Diagram](/waves/additional_images/state_diagram.png)
+![State Diagram](fsm-assignments/problem2_traffic/waves/additional_images/state_diagram.png)
 
 ## Testbench: `tb_traffic_light`
 
