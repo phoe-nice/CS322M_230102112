@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+`timescale 1ms / 1ps
 
 module vending_mealy(
   input wire clk,
@@ -68,4 +68,5 @@ module vending_mealy(
       end
     endcase
   end
+
 endmodule
