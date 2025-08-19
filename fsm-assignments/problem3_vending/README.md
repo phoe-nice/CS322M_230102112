@@ -61,7 +61,7 @@ A testbench is provided to simulate the behavior with various coin input sequenc
 ---
 
 ## State Diagram
-![State Diagram]()
+![State Diagram](waves/additional_images/state_diagram.jpg)
 
 ---
 
