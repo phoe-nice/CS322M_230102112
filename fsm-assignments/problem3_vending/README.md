@@ -50,6 +50,14 @@ A testbench is provided to simulate the behavior with various coin input sequenc
 
 ---
 
+## 🔍 Why Mealy?
+
+ - Mealy FSM generates outputs based on present state + input.
+
+ - This allows vend and chg5 signals to be triggered immediately in the same cycle when the required total is reached, instead of waiting for a state transition (like in Moore).
+
+ - This ensures faster response when the target value is hit.
+
 ## Testbench: `tb_vending_mealy`
 
 - Applies different coin input sequences to test normal and edge cases.
