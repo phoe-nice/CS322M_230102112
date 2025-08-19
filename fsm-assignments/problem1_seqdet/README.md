@@ -41,6 +41,9 @@ The FSM transitions based on current state and input bit. When in **S3** and `di
 
 ---
 
+## State Diagram
+
+
 ![State Diagram](waves/additional_images/state_diagram.jpg)
 
 ---
