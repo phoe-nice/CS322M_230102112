@@ -1,4 +1,4 @@
-`timescale 1ns/1ps
+`timescale 1ms/1ps
 
 module tb_vending_mealy;
   reg clk, rst;
@@ -71,4 +71,5 @@ module tb_vending_mealy;
     // Finish simulation
     #50 $finish;
   end
+
 endmodule
