@@ -41,7 +41,7 @@ The FSM transitions based on current state and input bit. When in **S3** and `di
 
 ---
 
-![State Diagram](fsm-assignments/problem1_seqdet/waves/additional_images/state_diagram.jpg)
+![State Diagram](waves/additional_images/state_diagram.jpg)
 
 ## Testbench: `tb_seq_detect_mealy`
 
