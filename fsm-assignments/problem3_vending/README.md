@@ -57,6 +57,13 @@ A testbench is provided to simulate the behavior with various coin input sequenc
  - This allows vend and chg5 signals to be triggered immediately in the same cycle when the required total is reached, instead of waiting for a state transition (like in Moore).
 
  - This ensures faster response when the target value is hit.
+   
+---
+
+## State Diagram
+![State Diagram]()
+
+---
 
 ## Testbench: `tb_vending_mealy`
 
