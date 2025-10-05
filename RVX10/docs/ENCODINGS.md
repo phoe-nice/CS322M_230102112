@@ -2,7 +2,11 @@
 
 The instructions have been encoded as follows:
 
+## RVX10 Instructions
+
 ![RVX10 Instructions](https://github.com/phoe-nice/CS322M_230102112/blob/30dfca0a867d52f629324d55d34d6e17448ede1d/RVX10/images/RVX10Instructions.png)
+
+## Encoding Table
 
 ![Encoding Table (Concrete)](https://github.com/phoe-nice/CS322M_230102112/blob/bfa5425d5005f908d769b12bfe09e8257ab9ed32/RVX10/images/EncodingTable.png)
 
