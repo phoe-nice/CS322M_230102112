@@ -11,6 +11,8 @@ Architectural State changes are not allowed and hardware change must be kept min
 8 ALU operations are already a part of the original architecture. Adding 10 more ALU operations means 18 total operations. To uniquely encode 18 combinations of ALU operations, 5bits of ALUControl are needed.
 Bitwidth change must be reflected everywhere, hence, the modules "riscvsingle", "controller", "datapath" and "aludec" have been changed accordingly.
 
+![](images/ALUControl1.png)
+
 ### 2. Adding New ALU Operations
 
 ALU operations corresponding to the other 10 instructions need to be added into the "alu" module. Individual combinations of ALUControls are assigned to each operation, such that they are not redundant with the previous combinations which are extended to 5 bits aswell.
