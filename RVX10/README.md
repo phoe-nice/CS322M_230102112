@@ -12,19 +12,37 @@ Architectural State changes are not allowed and hardware change must be kept min
 Bitwidth change must be reflected everywhere, hence, the modules "riscvsingle", "controller", "datapath" and "aludec" have been changed accordingly.
 
 ![](images/ALUControl1.png)
+![](images/ALUControl2.png)
+![](images/ALUControl3.png)
+![](images/ALUControl4.png)
+
+---
 
 ### 2. Adding New ALU Operations
 
 ALU operations corresponding to the other 10 instructions need to be added into the "alu" module. Individual combinations of ALUControls are assigned to each operation, such that they are not redundant with the previous combinations which are extended to 5 bits aswell.
+
+![](images/ALU.png)
+
+---
 
 ### 3. ALU Decoder change to accomodate new ALUControl width
 
 As the ALUControl bitwidth as increased, ALU Decoder also needs to be changed to match the given opcode, func7 and func3 values to the corresponding ALUControl combination, which will do the operation needed by the instruction.
 The ALUOp corresponding to 2'b11 was unused in the original design, hence we can utilize that for the new RVX10 instructions. Since func7 values only change in the 2 least significant bits position, we do not need the entire 7bits of func7 for decoding, along with the func3 values.
 
+![](images/aludec1.png)
+![](images/aludec2.png)
+
+---
+
 ### 4. Changes to Main Decoder
 
 As the new RVX10 instructions follow a different opcode, we add a case for the new opcode and assign appropriate control values like ALUOp = 2'b11 to it.
+
+![](images/maindec.png)
+
+---
 
 ### 5. Writes to x0 are ignored
 
@@ -33,3 +51,6 @@ Since x0 is to be maintained as a "zero" register constantly, in the module "reg
   if (we & a3 != 0) rf[a3] <= wd;
 ```
 
+![](images/regfile.png)
+
+---
