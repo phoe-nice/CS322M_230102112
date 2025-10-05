@@ -17,7 +17,7 @@ main:
     addi  x9, x0, 99
 
 label1:
-    # Interleaved instruction
+    # Intermediate instruction
     andn  x9, x5, x6           # x9 = x5 & ~x6
 
     # Setup x10 = INT_MIN (0x80000000)
@@ -41,7 +41,7 @@ label2:
     # Setup x14 = -1 (0xFFFFFFFF)
     addi  x14, x0, -1
 
-    # Interleaved instructions
+    # Intermediate instructions
     orn   x15, x13, x14
     xnor  x16, x13, x14
 
