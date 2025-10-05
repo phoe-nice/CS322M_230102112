@@ -2,9 +2,9 @@
 
 The instructions have been encoded as follows:
 
-![RVX10 Instructions](images/RVX10_Instructions.png)
+![RVX10 Instructions](RVX10/images/RVX10_Instructions.png)
 
-![Encoding Table (Concrete)](images/EncodingTable.png)
+![Encoding Table (Concrete)](RVX10/images/EncodingTable.png)
 
 ---
 
