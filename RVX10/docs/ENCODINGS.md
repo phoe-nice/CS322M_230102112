@@ -36,7 +36,7 @@ All RVX10 custom instructions use the 7-bit opcode `0001011(0x0B)`.
 
 ---
 
-## Encoding table (concrete)
+## Encoding table (Worked encodings)
 
 | Instruction | Opcode | funct7 | funct3 | Sample Regs (rd, rs1, rs2) | 32-bit Binary Encoding                         | Hex Code  | ALUControl | Description               |
 |-------------|--------|--------|--------|----------------------------|------------------------------------------------|-----------|------------|---------------------------|
