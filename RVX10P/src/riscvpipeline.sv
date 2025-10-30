@@ -36,7 +36,7 @@ module imem(input  logic [31:0] a,
   logic [31:0] RAM[0:63];
 
   initial begin
-    $readmemh("riscvtest.txt", RAM);
+    $readmemh("rvx10_pipeline.hex", RAM);
   end
 
   // word-aligned
@@ -79,4 +79,5 @@ module riscvpipeline(input logic clk, reset,
               .DataAdr_out(DataAdr_out),
               .WriteData_out(WriteData_out),
               .ReadData(ReadData));
+
 endmodule
