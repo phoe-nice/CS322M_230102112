@@ -42,7 +42,7 @@ The project consists of the following main modules:
 ``vvp pipeline_tb.vvp``
 ### Waveform
 
-![Waveform](RVX10P/images/waveform.png)
+![Waveform](https://github.com/phoe-nice/CS322M_230102112/blob/793466cc62555db15afc1dc194eeaa240bf18758/RVX10P/images/waveform.png)
 
 ---
 
